@@ -28,4 +28,8 @@ Find each ! and invert it.
 Find any remaining &&/|| and solve it.
 When you are done you should have true or false.
 
+Why does "test" && "test" return "test" or 1 && 1 return 1 instead of true?
+Ruby and many languages like it return one of the operands to their boolean expressions rather than just true or false. 
+This means that if you did false && 1 you get the first operand (false) but if you do true && 1 your get the second (1).
+
 """
